@@ -1,0 +1,6 @@
+Comandos para compilar:
+
+gcc -Wall -c lists.c
+ar -rc liblists.a lists.o
+ar -t liblists.a
+gcc -Wall -o main main.c -L. -llists
